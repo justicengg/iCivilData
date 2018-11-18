@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.novery.alfa.view.TitleView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+     <ImageView
+        android:id="@+id/imageView_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0px"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/fragment_alfa_home_text"
+        android:scaleType="fitXY"
+        android:src="@drawable/alfa_home_theme" />
+    
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_home_tools"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"     
+        android:layout_below="@+id/imageView_theme"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp" >
+       
+    <!--
+         <TextView
+        android:id="@+id/fragment_alfa_home_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_alfa_home_text"
+        android:textSize="18sp" />
+    -->
+
+<!--         android:layout_alignParentLeft="true" -->
+<!--         android:layout_below="@+id/imageView_theme" -->
+    <ImageView
+        android:id="@+id/imageView_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/fragment_alfa_home_text"
+        android:src="@drawable/alfa_tools_gps" />
+
+      <!--   android:layout_alignTop="@+id/imageView_gps"
+      
+        android:layout_toRightOf="@+id/imageView_gps"
+       -->
+    <ImageView
+        android:id="@+id/imageView_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/fragment_alfa_home_text"
+        android:src="@drawable/alfa_tools_right" />
+
+    <ImageView
+        android:id="@+id/imageView_torch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/fragment_alfa_home_text"
+        android:src="@drawable/alfa_tools_torch_norm" />
+
+    <ImageView
+        android:id="@+id/imageView_interval_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/fragment_alfa_home_text"
+        android:src="@drawable/alfa_tools_interval_norm" />
+
+    <ImageView
+        android:id="@+id/imageView_comp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/fragment_alfa_home_text"
+        android:src="@drawable/alfa_tools_comp_norm" />
+
+    <ImageView
+        android:id="@+id/imageView_interval_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/fragment_alfa_home_text"
+        android:src="@drawable/alfa_tools_interval_norm" />
+
+    <ImageView
+        android:id="@+id/imageView_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/fragment_alfa_home_text"
+        android:src="@drawable/alfa_tools_camera_norm" />
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/imageButton_home_remote"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:layout_below="@+id/LinearLayout_home_tools"
+        android:layout_centerVertical="true"
+        android:layout_margin="0dp"
+        android:text = "@string/alfa_button_text_remote"
+        android:background="@drawable/alfa_home_tools_button_bg"
+        android:contentDescription="@string/fragment_alfa_home_text"
+        android:drawableTop="@drawable/alfa_home_ic_remote" />
+
+    <ImageView
+        android:id="@+id/imageView_vertical_line_00"
+        android:layout_width="2dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_alignTop="@+id/imageButton_home_remote"
+        android:layout_toRightOf="@+id/imageButton_home_remote"
+        android:src="@drawable/alfa_home_panel_vetical_line" />
+    <Button
+        android:id="@+id/imageButton_home_device"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:layout_alignBottom="@+id/imageButton_home_remote"
+        android:layout_alignTop="@+id/imageView_vertical_line_00"
+        android:layout_toRightOf="@+id/imageView_vertical_line_00"
+        android:background="@drawable/alfa_home_tools_button_bg"
+        android:contentDescription="@string/fragment_alfa_home_text"
+        android:drawableTop="@drawable/alfa_home_ic_device"
+        android:text="@string/alfa_button_text_device" />
+     <ImageView
+        android:id="@+id/imageView_vertical_line_01"
+        android:layout_width="2dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"        
+        android:layout_alignTop="@+id/imageButton_home_device"
+        android:layout_toRightOf="@+id/imageButton_home_device"
+        android:src="@drawable/alfa_home_panel_vetical_line" />
+
+    <!-- <Button
+        android:id="@+id/imageButton_home_debug"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:contentDescription="@string/fragment_alfa_home_text"
+        android:layout_alignTop="@+id/imageView_vertical_line_01"
+        android:layout_toRightOf="@+id/imageView_vertical_line_01"
+        android:text = "@string/alfa_button_text_debug"
+        android:background="@drawable/alfa_home_tools_button_bg"
+        android:drawableTop="@drawable/alfa_home_ic_debug" />
+    
+     
+     
+     
+     <ImageView
+        android:id="@+id/imageView_vertical_line_02"
+        android:layout_width="2dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_alignTop="@+id/imageButton_home_debug"
+        android:layout_toRightOf="@+id/imageButton_home_debug"
+        android:src="@drawable/alfa_home_panel_vetical_line" /> -->
+
+    <Button
+        android:id="@+id/imageButton_home_myinfo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:text = "@string/alfa_button_text_myinfo"
+        android:background="@drawable/alfa_home_tools_button_bg"
+        android:contentDescription="@string/fragment_alfa_home_text"
+        android:layout_alignTop="@+id/imageView_vertical_line_01"
+        android:layout_toRightOf="@+id/imageView_vertical_line_01"
+        android:drawableTop="@drawable/alfa_home_ic_setting" />
+    
+     <ImageView
+        android:id="@+id/imageView_vertical_line_10"
+        android:layout_width="2dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_alignTop="@+id/imageButton_home_warn"
+        android:layout_toRightOf="@+id/imageButton_home_warn"
+        android:src="@drawable/alfa_home_panel_vetical_line" />
+
+     <Button
+         android:id="@+id/imageButton_home_warn"
+         android:layout_width="80dp"
+         android:layout_height="80dp"
+         android:layout_alignParentRight="true"
+         android:layout_alignTop="@+id/imageButton_home_myinfo"
+         android:background="@drawable/alfa_home_tools_button_bg"
+         android:contentDescription="@string/fragment_alfa_home_text"
+         android:drawableTop="@drawable/alfa_home_ic_warn"
+         android:padding="10dp"
+         android:text="@string/alfa_button_text_warn" />
+    
+</RelativeLayout>

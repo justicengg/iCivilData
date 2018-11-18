@@ -1,0 +1,252 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.novery.inclimeter.ActivityInclinometer$PlaceholderFragment" >
+
+    <LinearLayout
+        android:id="@+id/line_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <ImageButton
+            android:id="@+id/imgbt_incli_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/hint_incli_scan_bluetooth"
+            android:src="@drawable/search_32" />
+      
+	<!-- <Chronometer
+	    android:id="@+id/chronometer_heart"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="" /> -->
+
+        <ImageButton
+            android:id="@+id/imgbt_switch_bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="50dp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/hint_incli_connect_bluetooth"
+            android:src="@drawable/switch_on" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_blue"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignStart="@+id/textview"
+            android:progressDrawable="@drawable/circular_progress_bar" />
+
+        <ImageButton
+            android:id="@+id/imgbt_incli_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/hint_incli_connect_state"
+            android:src="@drawable/bluetooth_inactive" />
+
+        <TextView
+            android:id="@+id/txt_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_incli_bluetooth"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/line_top"
+        android:divider="@drawable/list_line"
+        android:dividerHeight="1dip"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/relative_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFCC"
+        android:layout_below="@+id/lv_incli_bluetooth" >
+
+        <LinearLayout
+            android:id="@+id/line_incli_x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/txt_incli_x_name"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="100dp"
+                android:text="@string/angle_name_x" />
+
+            <TextView
+                android:id="@+id/txt_incli_x"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/init_angle_degree"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/txt_incli_x_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/unit_angle_degree" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_incli_y"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_incli_x"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/txt_incli_y_name"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="100dp"
+                android:text="@string/angle_name_y" />
+
+            <TextView
+                android:id="@+id/txt_incli_y"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/init_angle_degree"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/txt_incli_y_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/unit_angle_degree" />
+        </LinearLayout>
+<!-- 
+        <LinearLayout
+            android:id="@+id/line_incli_volt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_incli_y"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/txt_incli_volt_name"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="100dp"
+                android:text="@string/angle_name_volt" />
+
+            <TextView
+                android:id="@+id/txt_incli_volt"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/init_volt_zero"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/txt_incli_volt_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/unit_volt_v" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_incli_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_incli_volt"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/txt_incli_temp_name"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="100dp"
+                android:text="@string/angle_name_temp" />
+
+            <TextView
+                android:id="@+id/txt_incli_temp"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/init_temp_zero"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/txt_incli_temp_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/unit_temp_degree" />
+        </LinearLayout> -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/line_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_screen"
+        android:layout_centerHorizontal="true" >
+
+        <ImageButton
+            android:id="@+id/imgbt_incli_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/hint_incli_start"
+            android:src="@drawable/imgbt_start" />
+
+        <ImageButton
+            android:id="@+id/imgbt_incli_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/hint_incli_stop"
+            android:src="@drawable/imgbt_stop" />
+
+       <!--  <ImageButton
+            android:id="@+id/imgbt_incli_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/hint_incli_calibrate"
+            android:src="@drawable/imgbt_setting" />
+ -->
+        <ImageButton
+            android:id="@+id/imgbt_incli_poweroff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/hint_incli_poweroff"
+            android:src="@drawable/imgbt_poweroff" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/activity_bg"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/fragment_alfa_home"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        class="com.novery.alfa.fragment.FragmentAlfaHome" />
+
+    <fragment
+        android:id="@+id/fragment_alfa_device"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        class="com.novery.alfa.fragment.FragmentAlfaDevice" />
+
+    <fragment
+        android:id="@+id/fragment_alfa_remote"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        class="com.novery.alfa.fragment.FragmentAlfaRemote" />
+
+    <!-- <fragment
+        android:id="@+id/fragment_alfa_debug"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        class="com.novery.alfa.fragment.FragmentAlfaDebug" />
+ -->
+    <fragment
+        android:id="@+id/fragment_alfa_myhome"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        class="com.novery.alfa.fragment.FragmentAlfaMyhome" />
+
+    <com.novery.alfa.fragment.FragmentIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_footer_bg" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    
+
+<ImageButton
+    android:id="@+id/imgBtProvious"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_toLeftOf="@+id/imgBtNext"
+    android:background="#FFFFFF"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="25dp"
+    android:src="@drawable/bt_provious" />
+
+<ImageButton
+    android:id="@+id/imgBtNext"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"    
+    android:layout_marginTop="5dp"    
+    android:layout_marginRight="25dp"
+    android:background="#FFFFFF"
+    android:src="@drawable/bt_next" />
+
+<ImageButton
+    android:id="@+id/imgBtReturnUp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="5dp"    
+    android:layout_marginLeft="50dp"
+    android:background="#FFFFFF"
+    android:src="@drawable/bt_return_up" />
+
+<com.github.mikephil.charting.charts.LineChart
+    android:id="@+id/chart_left_remote"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/imgBtProvious" />
+
+<ListView
+    android:id="@+id/lv_remote_left_data"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/chart_left_remote"
+    android:divider="@drawable/list_line"
+    android:dividerHeight="1dip" >
+</ListView>
+
+</RelativeLayout>

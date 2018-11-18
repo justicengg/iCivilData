@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+  <TextView
+      android:id="@+id/textTitleBluetoothName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignTop="@+id/connectSwitch"
+      android:layout_marginTop="20dp"
+      android:text="@string/textTitleBluetoothName" />
+    <TextView
+        android:id="@+id/textFieldBluetoothName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textTitleBluetoothName"
+        android:layout_alignBottom="@+id/textTitleBluetoothName"
+        android:layout_toRightOf="@+id/textTitleBluetoothName"
+        android:text="@string/fragment_rawcode" />
+
+  <com.novery.switchplugin.SwitchButton
+      android:id="@+id/connectSwitch"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="0dp" />
+    
+  <me.maxwin.view.XListView
+      android:id="@+id/xListViewRawcode"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/connectSwitch"
+      android:layout_marginTop="5dp"
+       android:layout_marginBottom="40dp"
+      android:cacheColorHint="#00000000" >
+  </me.maxwin.view.XListView>
+ 
+
+
+  <EditText
+      android:id="@+id/editTextCodes"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_toLeftOf="@+id/btCodesSend"
+      android:ems="10"
+      android:hint="@string/hintInputCodes" />
+
+  <Button
+      android:id="@+id/btCodesSend"
+      android:layout_width="wrap_content"
+      android:layout_height="30dp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:background="@drawable/button_send_css"
+      android:text="@string/btCaptionSend"
+      android:textColor="@color/button_text"
+      android:layout_marginBottom="5dp"
+       />
+
+</RelativeLayout>

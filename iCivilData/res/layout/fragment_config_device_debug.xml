@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top" >
+
+    <TextView
+        android:id="@+id/tv_uri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="26dp"
+        android:labelFor="@+id/ed_uri"
+        android:text="@string/tv_config_uri" />
+
+    <EditText
+        android:id="@+id/et_uri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_uri"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textUri" />
+
+    <TextView
+        android:id="@+id/tv_station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_uri"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:labelFor="@+id/et_station"
+        android:text="@string/tv_config_station" />
+
+    <EditText
+        android:id="@+id/et_station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_station"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+
+</RelativeLayout>

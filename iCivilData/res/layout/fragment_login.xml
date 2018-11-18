@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.novery.activity.ActivityLogin$PlaceholderFragment" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_home" />
+
+    <EditText
+        android:id="@+id/et_login_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_login_pwd"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/user_login"
+        android:ems="10"
+        android:hint="@string/hint_login_user"
+        android:paddingLeft="50sp"
+        android:singleLine="true"
+        android:textColor="#3355FF"
+        android:width="100sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_login_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_login_user"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/pwd_login"
+        android:ems="10"
+        android:hint="@string/hint_login_pwd"
+        android:inputType="textPassword"
+        android:paddingLeft="50sp"
+        android:singleLine="true"        
+        android:layout_marginTop="20dp"
+        android:textColor="#3355FF"
+        android:width="100sp" />
+
+    <ImageButton
+        android:id="@+id/imgBtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_login_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_login"
+        android:contentDescription="@string/desc_login"
+        android:src="@drawable/bt_login" />
+
+</RelativeLayout>

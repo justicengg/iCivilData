@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iciviphone.ActivityCheckSystem"
+    tools:ignore="MergeRootFrame"
+     android:background="@color/blue"
+    >
+
+    <TextView
+        android:id="@+id/textFieldBlueVerMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="@string/hello_world"
+        android:height="50dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="15sp" 
+         />
+    </FrameLayout>

@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.novery.icivilphone.ActivityStart" >
+
+    <item
+        android:id="@+id/action_start_device"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_start_device"/>
+<item
+        android:id="@+id/action_start_configure"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_start_device"/>
+<item
+        android:id="@+id/action_start_web"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_start_web"/>
+</menu>

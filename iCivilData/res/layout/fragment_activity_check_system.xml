@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.iciviphone.ActivityCheckSystem$PlaceholderFragment"
+    android:background="@color/blue"
+     >
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="@string/welcome"
+        android:height="25dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="15sp" 
+         />
+    
+    
+    <TextView
+        android:id="@+id/textTitleBlueVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textWelcome"
+        android:layout_marginTop="23dp"
+        android:layout_toLeftOf="@+id/textWelcome"
+        android:height="25dp"
+        android:text="@string/blueVersion"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+    
+ <TextView
+        android:id="@+id/textFieldBlueVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textTitleBlueVer"
+        android:layout_alignBottom="@+id/textTitleBlueVer"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/textTitleBlueVer"
+        android:text="4.0"
+        android:height="25dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="15sp" 
+         />
+ 
+ 
+    <TextView
+        android:id="@+id/textTitleBlueName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textTitleBlueVer"
+        android:layout_below="@+id/textFieldBlueVer"
+        android:text="@string/blueName" 
+        android:height="25dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="15sp" 
+        />
+    
+    <TextView
+        android:id="@+id/textFieldBlueName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textTitleBlueName"
+        android:layout_alignBottom="@+id/textTitleBlueName"
+        android:layout_alignLeft="@+id/textFieldBlueVer"
+        android:text="青春版" 
+        android:height="25dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="15sp" 
+        />
+
+
+    <TextView
+        android:id="@+id/textHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textTitleBlueName"
+        android:layout_below="@+id/textFieldBlueName"
+        android:text="@string/hingBlueDeiceError" 
+        android:height="25dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="12sp" 
+        />
+    <ImageView
+        android:id="@+id/imgEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textWelcome"
+        android:layout_below="@+id/textHint"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/enter"
+        android:contentDescription="@string/enter"
+         />
+
+
+</RelativeLayout>
